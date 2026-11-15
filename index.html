@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +11,14 @@ content="Abdoljalil Addeh, PhD — Assistant Professor of Data Science at Mount 
 
 <meta name="theme-color" content="#ffffff">
 
-<title>Abdoljalil Addeh, PhD | Research & Academic Profile</title>
+<title>Abdoljalil Addeh, PhD | Academic Website</title>
 
 <style>
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+
 :root {
   --navy: #17324f;
   --blue: #286c99;
@@ -33,8 +39,12 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
   color: var(--ink);
   background: var(--white);
   line-height: 1.7;
@@ -53,7 +63,14 @@ a:hover {
   margin: auto;
 }
 
-/* NAVIGATION */
+h1, h2, h3 {
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+/* ================================
+   NAVIGATION
+================================ */
 
 .site-header {
   background: white;
@@ -64,7 +81,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
   padding: 23px 0;
 }
 
@@ -73,31 +90,38 @@ a:hover {
   font-weight: 750;
   color: var(--navy);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 26px;
 }
 
 nav a {
   color: var(--ink);
   text-decoration: none;
   font-size: 14px;
-  font-weight: 550;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 nav a:hover {
   color: var(--blue);
 }
 
-/* HERO */
+/* ================================
+   HERO
+================================ */
 
 .hero {
   padding: 95px 0 105px;
   background: linear-gradient(
-    135deg, #ffffff 50%, #f1f6fa 100%
+    135deg,
+    #ffffff 50%,
+    #f1f6fa 100%
   );
 }
 
@@ -114,11 +138,6 @@ nav a:hover {
   font-size: 12px;
   font-weight: 750;
   letter-spacing: 2px;
-}
-
-h1, h2, h3 {
-  color: var(--navy);
-  line-height: 1.3;
 }
 
 h1 {
@@ -176,7 +195,9 @@ h1 {
   border-color: var(--navy);
 }
 
-/* PORTRAIT */
+/* ================================
+   PORTRAIT
+================================ */
 
 .portrait {
   width: 100%;
@@ -208,7 +229,9 @@ h1 {
   color: var(--muted);
 }
 
-/* SECTIONS */
+/* ================================
+   SECTIONS
+================================ */
 
 section {
   padding: 78px 0;
@@ -231,7 +254,7 @@ section {
 .section-heading p {
   color: var(--muted);
   margin: 0;
-  max-width: 740px;
+  max-width: 800px;
 }
 
 .prose {
@@ -243,76 +266,9 @@ section {
   margin-bottom: 18px;
 }
 
-/* RESEARCH CARDS */
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.card {
-  background: white;
-  padding: 29px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(23,50,79,0.07);
-}
-
-.card-number {
-  color: var(--blue);
-  font-size: 13px;
-  font-weight: 750;
-  letter-spacing: 1px;
-}
-
-.card h3 {
-  margin: 14px 0 12px;
-  font-size: 20px;
-}
-
-.card p {
-  color: var(--muted);
-  margin: 0;
-  font-size: 15px;
-}
-
-/* PUBLICATIONS */
-
-.publication {
-  border-bottom: 1px solid var(--line);
-  padding: 22px 0;
-}
-
-.publication h3 {
-  font-size: 18px;
-  margin: 0 0 8px;
-}
-
-.publication p {
-  margin: 5px 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.publication a {
-  display: inline-block;
-  margin-top: 9px;
-  font-size: 14px;
-  font-weight: 650;
-  text-decoration: none;
-}
-
-.publication a:hover {
-  text-decoration: underline;
-}
-
-/* TEACHING */
+/* ================================
+   TEACHING
+================================ */
 
 .teaching-group {
   margin-bottom: 40px;
@@ -345,21 +301,17 @@ section {
   flex-shrink: 0;
 }
 
-/* FUNDED RESEARCH PROJECTS */
+/* ================================
+   RESEARCH PROJECTS
+================================ */
 
-.project-section-title {
-  font-size: 24px;
-  margin: 45px 0 24px;
-  color: var(--navy);
-}
-
-.funded-project {
-  background: #ffffff;
+.research-project {
+  background: white;
   border: 1px solid var(--line);
   border-left: 4px solid var(--blue);
   border-radius: 10px;
-  padding: 32px 36px;
-  margin-bottom: 24px;
+  padding: 34px 38px;
+  margin-bottom: 26px;
   box-shadow: 0 5px 20px rgba(23,50,79,0.035);
 }
 
@@ -372,16 +324,15 @@ section {
   margin-bottom: 12px;
 }
 
-.funded-project h3 {
+.research-project h3 {
   font-size: 23px;
-  margin: 0 0 14px;
+  margin: 0 0 16px;
 }
 
 .project-description {
-  color: var(--ink);
   font-size: 15px;
   line-height: 1.85;
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 0 22px;
 }
 
@@ -399,23 +350,58 @@ section {
   color: var(--navy);
 }
 
-/* OPEN SOURCE PROJECTS */
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 20px;
 }
 
-.project-link {
-  display: inline-block;
-  margin-top: 18px;
+.project-links a {
   font-size: 14px;
   font-weight: 650;
   text-decoration: none;
 }
 
-/* ACADEMIC PROFILES */
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   PUBLICATIONS
+================================ */
+
+.publication {
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+
+.publication h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.publication p {
+  margin: 5px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.publication a {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   CONTACT
+================================ */
 
 .profile-links {
   display: flex;
@@ -434,7 +420,9 @@ section {
   font-weight: 600;
 }
 
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 
 footer {
   background: var(--navy);
@@ -447,9 +435,12 @@ footer a {
   color: white;
 }
 
-/* MOBILE */
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
 
 @media (max-width: 800px) {
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 45px;
@@ -457,11 +448,6 @@ footer a {
 
   .portrait {
     max-width: 270px;
-  }
-
-  .cards,
-  .project-grid {
-    grid-template-columns: 1fr;
   }
 
   .nav-inner {
@@ -490,32 +476,33 @@ footer a {
     text-align: left;
   }
 
-  .funded-project {
-    padding: 24px;
+  .research-project {
+    padding: 25px;
   }
 
-  .funded-project h3 {
+  .research-project h3 {
     font-size: 20px;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-
-  .card {
-    transition: none;
-  }
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- ================================
+     NAVIGATION
+================================ -->
 
 <header class="site-header">
+
   <div class="container nav-inner">
 
     <a class="brand" href="#">
@@ -524,23 +511,26 @@ footer a {
 
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
       <a href="#teaching">Teaching</a>
       <a href="#projects">Research Projects</a>
-      <a href="#training">Training</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </nav>
 
   </div>
+
 </header>
 
-<!-- HERO -->
+<!-- ================================
+     HERO
+================================ -->
 
 <div class="hero">
+
   <div class="container hero-grid">
 
     <div>
+
       <div class="eyebrow">
         Assistant Professor of Data Science
       </div>
@@ -558,17 +548,21 @@ footer a {
       </p>
 
       <div class="hero-buttons">
-        <a href="#research" class="btn btn-primary">
+
+        <a href="#projects" class="btn btn-primary">
           Explore My Research
         </a>
 
         <a href="#publications" class="btn btn-outline">
           Publications
         </a>
+
       </div>
+
     </div>
 
     <div class="portrait">
+
       <img
         src="profile.jpg"
         alt="Portrait of Abdoljalil Addeh"
@@ -579,16 +573,21 @@ footer a {
         Professional portrait<br>
         Upload profile.jpg to GitHub
       </div>
+
     </div>
 
   </div>
+
 </div>
 
 <main>
 
-<!-- ABOUT -->
+<!-- ================================
+     ABOUT
+================================ -->
 
 <section id="about">
+
   <div class="container">
 
     <div class="section-heading">
@@ -596,12 +595,13 @@ footer a {
     </div>
 
     <div class="prose">
+
       <p>
         I am an Assistant Professor of Data Science at
         Mount Royal University in Calgary, Canada.
         My research focuses on developing machine learning
-        and deep learning approaches for neuroimaging
-        and physiological signal modeling.
+        and deep learning approaches for neuroimaging,
+        physiological signal modeling, and biomedical imaging.
       </p>
 
       <p>
@@ -614,284 +614,46 @@ footer a {
       </p>
 
       <p>
-        I am interested in developing robust, generalizable,
-        and reproducible computational methods that connect
-        artificial intelligence with neuroimaging research.
+        My broader research interests include artificial
+        intelligence for brain health, physiological
+        signal reconstruction, neuroimaging across the
+        lifespan, and reproducible computational methods.
       </p>
-    </div>
 
-  </div>
-</section>
-
-<!-- RESEARCH -->
-
-<section id="research" class="section-alt">
-  <div class="container">
-
-    <div class="section-heading">
-      <h2>Research Areas</h2>
       <p>
-        My research lies at the intersection of artificial
-        intelligence, neuroimaging, and physiological modeling.
+        I am also committed to research-driven education
+        and mentoring students in machine learning,
+        scientific programming, biomedical data analysis,
+        and interdisciplinary research.
       </p>
-    </div>
-
-    <div class="cards">
-
-      <article class="card">
-        <div class="card-number">01 / NEUROIMAGING</div>
-        <h3>Machine Learning for fMRI</h3>
-        <p>
-          Developing computational methods to analyze
-          functional MRI and extract physiologically
-          meaningful information from brain imaging data.
-        </p>
-      </article>
-
-      <article class="card">
-        <div class="card-number">02 / PHYSIOLOGY</div>
-        <h3>Physiological Signal Modeling</h3>
-        <p>
-          Investigating data-driven approaches for
-          estimating respiratory and cardiovascular
-          physiological dynamics from fMRI measurements.
-        </p>
-      </article>
-
-      <article class="card">
-        <div class="card-number">03 / BRAIN HEALTH</div>
-        <h3>AI for Brain Health</h3>
-        <p>
-          Exploring applications of machine learning
-          to brain function, aging, and neurological
-          health through computational neuroimaging.
-        </p>
-      </article>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- PUBLICATIONS -->
-
-<section id="publications">
-  <div class="container">
-
-    <div class="section-heading">
-      <h2>Selected Publications</h2>
-      <p>
-        Peer-reviewed research in machine learning,
-        neuroimaging, physiological signal modeling,
-        and biomedical imaging.
-      </p>
-    </div>
-
-    <!-- PAPER 1 -->
-
-    <div class="publication">
-      <h3>
-        Calibration-Free Estimation of Cerebrovascular
-        Reactivity from Resting-State BOLD fMRI
-        Using Reconstructed Respiratory Fluctuations
-      </h3>
-
-      <p>
-        <strong>A. Addeh</strong>, E. Church,
-        M. Mahajna, K. Ardila, P. Charatpangoon,
-        et al.
-      </p>
-
-      <p>
-        <em>Magnetic Resonance in Medicine</em>,
-        96(6), 2755–2766 (2026).
-      </p>
-
-      <a href="https://doi.org/10.1002/mrm.70553"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <!-- PAPER 2 -->
-
-    <div class="publication">
-      <h3>
-        Improving Respiratory and Heart Rate Variation
-        Estimation from Resting-State BOLD fMRI
-        Across Healthy Children, Adults, and Aging
-        Populations Using a Deep Learning Architecture
-        Informed by Functional and Structural Atlases
-      </h3>
-
-      <p>
-        <strong>A. Addeh</strong>, K. Ardila,
-        P. Charatpangoon, E. Church, et al.
-      </p>
-
-      <p>
-        <em>Imaging Neuroscience</em> (2026).
-      </p>
-
-      <a href="https://doi.org/10.1162/IMAG.a.1346"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <!-- PAPER 3 -->
-
-    <div class="publication">
-      <h3>
-        Physiological Confounds in BOLD-fMRI
-        and Their Correction
-      </h3>
-
-      <p>
-        <strong>A. Addeh</strong>, R. J. Williams,
-        A. Golestani, G. B. Pike, M. E. MacDonald.
-      </p>
-
-      <p>
-        <em>NMR in Biomedicine</em>,
-        38, e70076 (2025).
-      </p>
-
-      <a href="https://doi.org/10.1002/nbm.70076"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <!-- PAPER 4 -->
-
-    <div class="publication">
-      <h3>
-        Machine Learning-based Estimation of
-        Respiratory Fluctuations in a Healthy Adult
-        Population Using Resting State BOLD fMRI
-        and Head Motion Parameters
-      </h3>
-
-      <p>
-        <strong>A. Addeh</strong>, F. Vega,
-        A. Morshedi, R. J. Williams,
-        G. B. Pike, M. E. MacDonald.
-      </p>
-
-      <p>
-        <em>Magnetic Resonance in Medicine</em>,
-        93(3), 1365–1379 (2025).
-      </p>
-
-      <a href="https://doi.org/10.1002/mrm.30330"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <!-- PAPER 5 -->
-
-    <div class="publication">
-      <h3>
-        Direct Machine Learning Reconstruction of
-        Respiratory Variation Waveforms from
-        Resting State fMRI Data in a Pediatric Population
-      </h3>
-
-      <p>
-        <strong>A. Addeh</strong>, F. Vega,
-        P. R. Medi, R. J. Williams,
-        G. B. Pike, M. E. MacDonald.
-      </p>
-
-      <p>
-        <em>NeuroImage</em>,
-        269, 119904 (2023).
-      </p>
-
-      <a href="https://doi.org/10.1016/j.neuroimage.2023.119904"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <!-- PAPER 6 -->
-
-    <div class="publication">
-      <h3>
-        Radiation Dose Reduction in Computed Tomography
-        Perfusion of Acute Ischemic Stroke Patients
-        Using a Denoising Autoencoder
-      </h3>
-
-      <p>
-        P. Charatpangoon, P. Delannoy, F. Vega,
-        R. Gilliland, <strong>A. Addeh</strong>, et al.
-      </p>
-
-      <p>
-        <em>Physica Medica</em>,
-        148, 105902 (2026).
-      </p>
-
-      <a href="https://doi.org/10.1016/j.ejmp.2026.105902"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <!-- PAPER 7 -->
-
-    <div class="publication">
-      <h3>
-        Image Translation for Estimating
-        Two-Dimensional Axial Amyloid-Beta PET
-        from Structural MRI
-      </h3>
-
-      <p>
-        F. Vega, <strong>A. Addeh</strong>,
-        A. Ganesh, E. E. Smith, M. E. MacDonald.
-      </p>
-
-      <p>
-        <em>Journal of Magnetic Resonance Imaging</em>,
-        59(3), 1021–1031 (2024).
-      </p>
-
-      <a href="https://doi.org/10.1002/jmri.29070"
-         target="_blank" rel="noopener noreferrer">
-        View Journal Article &rarr;
-      </a>
-    </div>
-
-    <div style="margin-top:35px;">
-      <a
-        href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-primary">
-        View All Publications on Google Scholar &rarr;
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- TEACHING -->
+<!-- ================================
+     TEACHING
+================================ -->
 
 <section id="teaching" class="section-alt">
+
   <div class="container">
 
     <div class="section-heading">
+
       <h2>Teaching</h2>
+
       <p>
         Undergraduate teaching in data science,
         machine learning, programming,
         and biomedical engineering.
       </p>
+
     </div>
+
+    <!-- MOUNT ROYAL UNIVERSITY -->
 
     <div class="teaching-group">
 
@@ -926,6 +688,8 @@ footer a {
 
     </div>
 
+    <!-- UNIVERSITY OF CALGARY -->
+
     <div class="teaching-group">
 
       <h3>University of Calgary</h3>
@@ -952,32 +716,38 @@ footer a {
     </div>
 
   </div>
+
 </section>
 
-<!-- RESEARCH PROJECTS -->
+<!-- ================================
+     RESEARCH PROJECTS
+================================ -->
 
 <section id="projects">
+
   <div class="container">
 
     <div class="section-heading">
-      <h2>Research Projects &amp; Funding</h2>
+
+      <h2>Research Projects</h2>
+
       <p>
-        Funded research initiatives advancing
-        artificial intelligence, neuroimaging,
-        and physiological modeling.
+        My research projects span artificial intelligence,
+        functional neuroimaging, physiological signal
+        reconstruction, cerebrovascular function,
+        and biomedical image analysis.
+        They include funded initiatives, independent
+        methodological research, and collaborative studies.
       </p>
+
     </div>
 
-    <h3 class="project-section-title">
-      Funded Research Projects
-    </h3>
+    <!-- PROJECT 1: AGECARE -->
 
-    <!-- AGECARE -->
-
-    <article class="funded-project">
+    <article class="research-project">
 
       <div class="project-label">
-        AgeCare Innovation Fund · 2026–2028
+        01 / CEREBROVASCULAR REACTIVITY
       </div>
 
       <h3>
@@ -1001,20 +771,42 @@ footer a {
       </p>
 
       <div class="project-meta">
-        <span><strong>Funding:</strong> CAD $10,000</span>
-        <span><strong>Role:</strong> Principal Investigator</span>
-        <span><strong>Institution:</strong> Mount Royal University</span>
-        <span><strong>Period:</strong> 2026–2028</span>
+        <span>
+          <strong>Funding:</strong>
+          AgeCare Innovation Fund, CAD $10,000
+        </span>
+
+        <span>
+          <strong>Role:</strong>
+          Principal Investigator
+        </span>
+
+        <span>
+          <strong>Period:</strong>
+          2026–2028
+        </span>
+
+        <span>
+          <strong>Institution:</strong>
+          Mount Royal University
+        </span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://doi.org/10.1002/mrm.70553"
+           target="_blank" rel="noopener noreferrer">
+          Related Publication &rarr;
+        </a>
       </div>
 
     </article>
 
-    <!-- IRGF -->
+    <!-- PROJECT 2: IRGF -->
 
-    <article class="funded-project">
+    <article class="research-project">
 
       <div class="project-label">
-        Internal Research Grant Fund · 2025–2026
+        02 / PHYSIOLOGICAL SIGNAL MODELING
       </div>
 
       <h3>
@@ -1038,20 +830,42 @@ footer a {
       </p>
 
       <div class="project-meta">
-        <span><strong>Funding:</strong> CAD $7,000</span>
-        <span><strong>Role:</strong> Principal Investigator</span>
-        <span><strong>Institution:</strong> Mount Royal University</span>
-        <span><strong>Period:</strong> 2025–2026</span>
+        <span>
+          <strong>Funding:</strong>
+          MRU Internal Research Grant Fund, CAD $7,000
+        </span>
+
+        <span>
+          <strong>Role:</strong>
+          Principal Investigator
+        </span>
+
+        <span>
+          <strong>Period:</strong>
+          2025–2026
+        </span>
+
+        <span>
+          <strong>Institution:</strong>
+          Mount Royal University
+        </span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/JalilAddeh/fMRI-Physio-Reconstruction"
+           target="_blank" rel="noopener noreferrer">
+          Research Software &rarr;
+        </a>
       </div>
 
     </article>
 
-    <!-- ALBERTA INNOVATES -->
+    <!-- PROJECT 3: ALBERTA INNOVATES -->
 
-    <article class="funded-project">
+    <article class="research-project">
 
       <div class="project-label">
-        Alberta Innovates · 2026
+        03 / AI AND BRAIN AGING
       </div>
 
       <h3>
@@ -1075,116 +889,410 @@ footer a {
       </p>
 
       <div class="project-meta">
-        <span><strong>Funding:</strong> CAD $7,500</span>
-        <span><strong>Role:</strong> Principal Investigator</span>
-        <span><strong>Program:</strong> Summer Research Studentship</span>
-        <span><strong>Year:</strong> 2026</span>
+        <span>
+          <strong>Funding:</strong>
+          Alberta Innovates Summer Research Studentship,
+          CAD $7,500
+        </span>
+
+        <span>
+          <strong>Role:</strong>
+          Principal Investigator
+        </span>
+
+        <span>
+          <strong>Year:</strong>
+          2026
+        </span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://doi.org/10.1162/IMAG.a.1346"
+           target="_blank" rel="noopener noreferrer">
+          Related Publication &rarr;
+        </a>
       </div>
 
     </article>
 
-    <!-- RESEARCH SOFTWARE -->
+    <!-- PROJECT 4: LIFESPAN RESEARCH -->
 
-    <h3 class="project-section-title">
-      Research Software &amp; Open Source
-    </h3>
+    <article class="research-project">
 
-    <div class="project-grid">
+      <div class="project-label">
+        04 / DEEP LEARNING FOR NEUROIMAGING
+      </div>
 
-      <article class="card">
+      <h3>
+        Deep Learning for Physiological Signal
+        Reconstruction Across the Lifespan
+      </h3>
 
-        <div class="card-number">
-          RESEARCH SOFTWARE
-        </div>
+      <p class="project-description">
+        This research investigates machine learning
+        and deep learning approaches for reconstructing
+        respiratory and cardiovascular physiological
+        waveforms directly from resting-state BOLD fMRI.
+        The work includes studies involving pediatric,
+        healthy adult, and aging populations, with
+        emphasis on model generalizability, physiological
+        interpretation, and the use of functional and
+        structural brain atlases. The broader objective
+        is to recover meaningful physiological information
+        from neuroimaging measurements without requiring
+        separately acquired physiological recordings.
+      </p>
 
-        <h3>
-          fMRI Physiological Reconstruction
-        </h3>
+      <div class="project-meta">
+        <span>
+          <strong>Research Area:</strong>
+          Physiological Signal Reconstruction
+        </span>
 
-        <p>
-          Machine learning-based reconstruction of
-          respiratory and cardiac physiological signals
-          from resting-state functional MRI.
-        </p>
+        <span>
+          <strong>Methods:</strong>
+          Machine Learning and Deep Learning
+        </span>
 
-        <a
-          class="project-link"
-          href="https://github.com/JalilAddeh/fMRI-Physio-Reconstruction"
-          target="_blank"
-          rel="noopener noreferrer">
-          View Repository &rarr;
+        <span>
+          <strong>Populations:</strong>
+          Children, Adults, and Aging Cohorts
+        </span>
+      </div>
+
+      <div class="project-links">
+
+        <a href="https://doi.org/10.1162/IMAG.a.1346"
+           target="_blank" rel="noopener noreferrer">
+          Related Publication &rarr;
         </a>
 
-      </article>
-
-      <article class="card">
-
-        <div class="card-number">
-          DEEP LEARNING
-        </div>
-
-        <h3>
-          CNN-based Respiratory Variation Reconstruction
-        </h3>
-
-        <p>
-          Deep learning approaches for estimating
-          respiratory variation signals from
-          functional MRI data.
-        </p>
-
-        <a
-          class="project-link"
-          href="https://github.com/JalilAddeh/CNN_fMRI_RV_Reconstruction"
-          target="_blank"
-          rel="noopener noreferrer">
-          View Repository &rarr;
+        <a href="https://github.com/JalilAddeh/CNN_fMRI_RV_Reconstruction"
+           target="_blank" rel="noopener noreferrer">
+          Research Software &rarr;
         </a>
 
-      </article>
+      </div>
 
-    </div>
+    </article>
+
+    <!-- PROJECT 5: COLLABORATIVE RESEARCH -->
+
+    <article class="research-project">
+
+      <div class="project-label">
+        05 / COLLABORATIVE BIOMEDICAL AI
+      </div>
+
+      <h3>
+        AI for Biomedical Image Reconstruction
+        and Analysis
+      </h3>
+
+      <p class="project-description">
+        My collaborative research includes the
+        application of machine learning and deep
+        learning to biomedical imaging problems
+        beyond functional MRI. This work includes
+        image translation approaches for estimating
+        amyloid-beta PET images from structural MRI
+        and deep learning-based denoising methods
+        for reducing radiation dose in computed
+        tomography perfusion imaging.
+        These studies explore how artificial
+        intelligence can improve the utility
+        and accessibility of biomedical imaging.
+      </p>
+
+      <div class="project-meta">
+        <span>
+          <strong>Research Area:</strong>
+          Biomedical Image Analysis
+        </span>
+
+        <span>
+          <strong>Methods:</strong>
+          Image Translation and Deep Learning
+        </span>
+
+        <span>
+          <strong>Role:</strong>
+          Research Collaborator
+        </span>
+      </div>
+
+      <div class="project-links">
+
+        <a href="https://doi.org/10.1002/jmri.29070"
+           target="_blank" rel="noopener noreferrer">
+          MRI-to-PET Publication &rarr;
+        </a>
+
+        <a href="https://doi.org/10.1016/j.ejmp.2026.105902"
+           target="_blank" rel="noopener noreferrer">
+          CT Perfusion Publication &rarr;
+        </a>
+
+      </div>
+
+    </article>
 
   </div>
+
 </section>
 
-<!-- TRAINING -->
+<!-- ================================
+     PUBLICATIONS
+================================ -->
 
-<section id="training" class="section-alt">
+<section id="publications" class="section-alt">
+
   <div class="container">
 
     <div class="section-heading">
-      <h2>Student Research &amp; Training</h2>
+
+      <h2>Selected Publications</h2>
+
+      <p>
+        Peer-reviewed research in machine learning,
+        neuroimaging, physiological signal modeling,
+        and biomedical imaging.
+      </p>
+
     </div>
 
-    <div class="prose">
+    <!-- PUBLICATION 1 -->
+
+    <div class="publication">
+
+      <h3>
+        Calibration-Free Estimation of Cerebrovascular
+        Reactivity from Resting-State BOLD fMRI
+        Using Reconstructed Respiratory Fluctuations
+      </h3>
+
       <p>
-        I am committed to research training and mentorship
-        in machine learning, data science, and neuroimaging.
-        My interests in student training include
-        computational methods, reproducible scientific
-        workflows, research communication, and
-        interdisciplinary applications of AI.
+        <strong>A. Addeh</strong>, E. Church,
+        M. Mahajna, K. Ardila, P. Charatpangoon,
+        et al.
       </p>
+
+      <p>
+        <em>Magnetic Resonance in Medicine</em>,
+        96(6), 2755–2766 (2026).
+      </p>
+
+      <a href="https://doi.org/10.1002/mrm.70553"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <!-- PUBLICATION 2 -->
+
+    <div class="publication">
+
+      <h3>
+        Improving Respiratory and Heart Rate Variation
+        Estimation from Resting-State BOLD fMRI
+        Across Healthy Children, Adults, and Aging
+        Populations Using a Deep Learning Architecture
+        Informed by Functional and Structural Atlases
+      </h3>
+
+      <p>
+        <strong>A. Addeh</strong>, K. Ardila,
+        P. Charatpangoon, E. Church, et al.
+      </p>
+
+      <p>
+        <em>Imaging Neuroscience</em> (2026).
+      </p>
+
+      <a href="https://doi.org/10.1162/IMAG.a.1346"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <!-- PUBLICATION 3 -->
+
+    <div class="publication">
+
+      <h3>
+        Physiological Confounds in BOLD-fMRI
+        and Their Correction
+      </h3>
+
+      <p>
+        <strong>A. Addeh</strong>, R. J. Williams,
+        A. Golestani, G. B. Pike, M. E. MacDonald.
+      </p>
+
+      <p>
+        <em>NMR in Biomedicine</em>,
+        38, e70076 (2025).
+      </p>
+
+      <a href="https://doi.org/10.1002/nbm.70076"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <!-- PUBLICATION 4 -->
+
+    <div class="publication">
+
+      <h3>
+        Machine Learning-based Estimation of
+        Respiratory Fluctuations in a Healthy Adult
+        Population Using Resting State BOLD fMRI
+        and Head Motion Parameters
+      </h3>
+
+      <p>
+        <strong>A. Addeh</strong>, F. Vega,
+        A. Morshedi, R. J. Williams,
+        G. B. Pike, M. E. MacDonald.
+      </p>
+
+      <p>
+        <em>Magnetic Resonance in Medicine</em>,
+        93(3), 1365–1379 (2025).
+      </p>
+
+      <a href="https://doi.org/10.1002/mrm.30330"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <!-- PUBLICATION 5 -->
+
+    <div class="publication">
+
+      <h3>
+        Direct Machine Learning Reconstruction of
+        Respiratory Variation Waveforms from
+        Resting State fMRI Data in a Pediatric Population
+      </h3>
+
+      <p>
+        <strong>A. Addeh</strong>, F. Vega,
+        P. R. Medi, R. J. Williams,
+        G. B. Pike, M. E. MacDonald.
+      </p>
+
+      <p>
+        <em>NeuroImage</em>,
+        269, 119904 (2023).
+      </p>
+
+      <a href="https://doi.org/10.1016/j.neuroimage.2023.119904"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <!-- PUBLICATION 6 -->
+
+    <div class="publication">
+
+      <h3>
+        Radiation Dose Reduction in Computed Tomography
+        Perfusion of Acute Ischemic Stroke Patients
+        Using a Denoising Autoencoder
+      </h3>
+
+      <p>
+        P. Charatpangoon, P. Delannoy, F. Vega,
+        R. Gilliland, <strong>A. Addeh</strong>, et al.
+      </p>
+
+      <p>
+        <em>Physica Medica</em>,
+        148, 105902 (2026).
+      </p>
+
+      <a href="https://doi.org/10.1016/j.ejmp.2026.105902"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <!-- PUBLICATION 7 -->
+
+    <div class="publication">
+
+      <h3>
+        Image Translation for Estimating
+        Two-Dimensional Axial Amyloid-Beta PET
+        from Structural MRI
+      </h3>
+
+      <p>
+        F. Vega, <strong>A. Addeh</strong>,
+        A. Ganesh, E. E. Smith, M. E. MacDonald.
+      </p>
+
+      <p>
+        <em>Journal of Magnetic Resonance Imaging</em>,
+        59(3), 1021–1031 (2024).
+      </p>
+
+      <a href="https://doi.org/10.1002/jmri.29070"
+         target="_blank" rel="noopener noreferrer">
+        View Journal Article &rarr;
+      </a>
+
+    </div>
+
+    <div style="margin-top:35px;">
+
+      <a
+        href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary">
+
+        View All Publications on Google Scholar &rarr;
+
+      </a>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- CONTACT -->
+<!-- ================================
+     CONTACT
+================================ -->
 
 <section id="contact">
+
   <div class="container">
 
     <div class="section-heading">
+
       <h2>Contact &amp; Academic Profiles</h2>
+
       <p>
         Research collaborations, academic inquiries,
         and student research opportunities.
       </p>
+
     </div>
 
     <div class="prose">
+
       <p>
         <strong>Abdoljalil Addeh, PhD</strong><br>
         Assistant Professor of Data Science<br>
@@ -1216,14 +1324,18 @@ footer a {
         </a>
 
       </div>
+
     </div>
 
   </div>
+
 </section>
 
 </main>
 
-<!-- FOOTER -->
+<!-- ================================
+     FOOTER
+================================ -->
 
 <footer>
   <div class="container">
