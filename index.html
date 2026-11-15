@@ -4,245 +4,635 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic website of Abdoljalil Addeh, Assistant Professor of Data Science at Mount Royal University.">
-  <title>Abdoljalil Addeh | Academic Website</title>
+  <meta name="description" content="Abdoljalil Addeh, PhD — Assistant Professor of Data Science at Mount Royal University. Research in machine learning, neuroimaging, and physiological modeling.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Abdoljalil Addeh, PhD | Research & Academic Profile</title>
+
   <style>
     :root {
-      --navy: #17304a;
-      --blue: #24628a;
-      --background: #f7f9fc;
-      --text: #243142;
+      --navy: #17324f;
+      --blue: #286c99;
+      --ink: #26394b;
+      --muted: #5d7082;
+      --line: #e0e8f0;
+      --soft: #f4f7fa;
+      --white: #ffffff;
     }
+
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--background);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--white);
       line-height: 1.7;
     }
-    header {
+
+    a { color: var(--blue); }
+
+    a:hover { color: var(--navy); }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      padding: 23px 0;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: 750;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 23px;
+    }
+
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 550;
+    }
+
+    nav a:hover { color: var(--blue); }
+
+    .hero {
+      padding: 95px 0 105px;
+      background: linear-gradient(
+        135deg, #ffffff 50%, #f1f6fa 100%
+      );
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.85fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 2px;
+    }
+
+    h1, h2, h3 {
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: clamp(35px, 4.5vw, 57px);
+      margin: 17px 0;
+      letter-spacing: -1.6px;
+    }
+
+    .hero-role {
+      font-size: 19px;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .hero-description {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 680px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 650;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
       background: var(--navy);
       color: white;
-      padding: 22px 8%;
+    }
+
+    .btn-primary:hover {
+      background: var(--blue);
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid #bccbd8;
+      color: var(--navy);
+      background: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--navy);
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 340px;
+      aspect-ratio: 3 / 4;
+      margin: auto;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #e7eef5;
+      box-shadow: 0 18px 45px rgba(23,50,79,0.12);
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+
+    .portrait-placeholder {
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    header strong { font-size: 20px; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-    }
-    nav a:hover { text-decoration: underline; }
-    .hero {
-      background: linear-gradient(120deg, #17304a, #285b7e);
-      color: white;
-      padding: 85px 8%;
-    }
-    .hero-inner {
-      max-width: 1100px;
-      margin: auto;
-    }
-    .hero h1 {
-      font-size: clamp(32px, 5vw, 52px);
-      line-height: 1.2;
-      margin: 0 0 15px;
-    }
-    .hero p { max-width: 700px; }
-    .subtitle { font-size: 19px; color: #dce8f5; }
-    .button {
-      display: inline-block;
-      padding: 11px 20px;
-      background: white;
-      color: var(--navy);
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 25px 24px 70px;
-    }
-    section {
-      padding: 38px 0;
-      border-bottom: 1px solid #dce3ec;
-    }
-    h2 { color: var(--navy); font-size: 27px; }
-    h3 { color: var(--blue); margin-bottom: 8px; }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 24px;
-      border: 1px solid #e1e7ef;
-      border-radius: 9px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.035);
-    }
-    a { color: var(--blue); }
-    footer {
-      background: var(--navy);
-      color: white;
+      justify-content: center;
       text-align: center;
       padding: 25px;
+      color: var(--muted);
     }
-    @media(max-width: 600px) {
-      header { padding: 20px; }
-      nav a { margin: 0 12px 0 0; }
-      .hero { padding: 60px 24px; }
+
+    section {
+      padding: 78px 0;
+      scroll-margin-top: 30px;
+    }
+
+    .section-alt { background: var(--soft); }
+
+    .section-heading {
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-size: 32px;
+      margin: 0 0 10px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+      max-width: 740px;
+    }
+
+    .prose {
+      max-width: 850px;
+      font-size: 16px;
+    }
+
+    .prose p { margin-bottom: 18px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 29px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(23,50,79,0.07);
+    }
+
+    .card-number {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      margin: 14px 0 12px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .publication {
+      border-bottom: 1px solid var(--line);
+      padding: 22px 0;
+    }
+
+    .publication:first-child { padding-top: 0; }
+
+    .publication h3 {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+
+    .publication p {
+      margin: 5px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 14px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .profile-links a {
+      display: inline-block;
+      border: 1px solid var(--line);
+      padding: 9px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #dce6ef;
+      padding: 30px 0;
+      font-size: 13px;
+    }
+
+    footer a { color: white; }
+
+    @media (max-width: 800px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .portrait {
+        max-width: 270px;
+      }
+
+      .cards, .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav { gap: 15px; }
+
+      .hero { padding: 65px 0; }
+
+      section { padding: 55px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card { transition: none; }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <strong>Abdoljalil Addeh</strong>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Abdoljalil Addeh</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#training">Training</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="hero">
-  <div class="hero-inner">
-    <h1>Abdoljalil Addeh, PhD</h1>
-    <p class="subtitle">
-      Assistant Professor of Data Science<br>
-      Mount Royal University | Calgary, Canada
-    </p>
-    <p>
-      Machine Learning for Neuroimaging,
-      Physiological Modeling, and Brain Health
-    </p>
-    <a class="button" href="#research">Explore My Research</a>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">
+          Assistant Professor of Data Science
+        </div>
+
+        <h1>Abdoljalil Addeh, PhD</h1>
+
+        <p class="hero-role">
+          Mount Royal University<br>
+          Calgary, Alberta, Canada
+        </p>
+
+        <p class="hero-description">
+          Advancing machine learning for neuroimaging,
+          physiological signal modeling, and brain health.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#research" class="btn btn-primary">
+            Explore My Research
+          </a>
+          <a href="#publications" class="btn btn-outline">
+            Publications
+          </a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <img
+          src="profile.jpg"
+          alt="Portrait of Abdoljalil Addeh"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+        <div class="portrait-placeholder" style="display:none;">
+          Professional portrait<br>
+          Upload profile.jpg to GitHub
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an Assistant Professor of Data Science at
-      Mount Royal University in Calgary, Canada.
-      My research focuses on developing machine learning
-      and deep learning methods for neuroimaging,
-      physiological signal modeling, and brain health.
-    </p>
-    <p>
-      I am particularly interested in extracting
-      physiologically meaningful information from
-      functional magnetic resonance imaging (fMRI)
-      and developing computational approaches that
-      advance our understanding of brain function.
-    </p>
-  </section>
+  <main>
 
-  <section id="research">
-    <h2>Research Areas</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Machine Learning for fMRI</h3>
-        <p>
-          Developing computational models to analyze
-          neuroimaging data and uncover meaningful
-          patterns in brain activity.
-        </p>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            I am an Assistant Professor of Data Science at
+            Mount Royal University in Calgary, Canada.
+            My research focuses on developing machine learning
+            and deep learning approaches for neuroimaging
+            and physiological signal modeling.
+          </p>
+
+          <p>
+            My work investigates how physiological information
+            can be extracted from functional magnetic resonance
+            imaging (fMRI), with particular interest in
+            respiratory and cardiovascular dynamics,
+            cerebrovascular reactivity, and computational
+            approaches to understanding brain function.
+          </p>
+
+          <p>
+            I am interested in developing robust, generalizable,
+            and reproducible computational methods that connect
+            artificial intelligence with neuroimaging research.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Physiological Signal Modeling</h3>
-        <p>
-          Estimating respiratory and cardiovascular
-          physiological dynamics from fMRI data.
-        </p>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Research Areas</h2>
+          <p>
+            My research lies at the intersection of artificial
+            intelligence, neuroimaging, and physiological modeling.
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card-number">01 / NEUROIMAGING</div>
+            <h3>Machine Learning for fMRI</h3>
+            <p>
+              Developing computational methods to analyze
+              functional MRI and extract physiologically
+              meaningful information from brain imaging data.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02 / PHYSIOLOGY</div>
+            <h3>Physiological Signal Modeling</h3>
+            <p>
+              Investigating data-driven approaches for
+              estimating respiratory and cardiovascular
+              physiological dynamics from fMRI measurements.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03 / BRAIN HEALTH</div>
+            <h3>AI for Brain Health</h3>
+            <p>
+              Exploring applications of machine learning
+              to brain function, aging, and neurological
+              health through computational neuroimaging.
+            </p>
+          </article>
+
+        </div>
       </div>
-      <div class="card">
-        <h3>Brain Health and Aging</h3>
-        <p>
-          Investigating applications of machine learning
-          to brain function, aging, and neurological health.
-        </p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Selected Publications</h2>
+          <p>
+            Peer-reviewed research in neuroimaging,
+            machine learning, and physiological signal analysis.
+          </p>
+        </div>
+
+        <div class="publication">
+          <h3>Selected publications will be added here</h3>
+          <p>
+            This section will feature verified article titles,
+            authors, journals, publication years, and DOI links.
+          </p>
+        </div>
+
+        <!--
+          Add a publication by copying this template:
+
+          <div class="publication">
+            <h3>Full article title</h3>
+            <p>Authors · Journal · Year</p>
+            <a href="https://doi.org/YOUR-DOI">
+              View Publication
+            </a>
+          </div>
+        -->
       </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Research Projects & Open-Source Software</h2>
+          <p>
+            Computational research tools and ongoing
+            methodological development.
+          </p>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="card">
+            <div class="card-number">RESEARCH SOFTWARE</div>
+            <h3>fMRI Physiological Reconstruction</h3>
+            <p>
+              Machine learning-based reconstruction of
+              respiratory and cardiac physiological signals
+              from resting-state functional MRI.
+            </p>
+            <a class="project-link"
+               href="https://github.com/JalilAddeh/fMRI-Physio-Reconstruction"
+               target="_blank" rel="noopener noreferrer">
+              View Repository &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card-number">DEEP LEARNING</div>
+            <h3>CNN-based Respiratory Variation Reconstruction</h3>
+            <p>
+              Deep learning approaches for estimating
+              respiratory variation signals from
+              functional MRI data.
+            </p>
+            <a class="project-link"
+               href="https://github.com/JalilAddeh/CNN_fMRI_RV_Reconstruction"
+               target="_blank" rel="noopener noreferrer">
+              View Repository &rarr;
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section id="training">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Student Research & Training</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            I am committed to research training and mentorship
+            in machine learning, data science, and neuroimaging.
+            My interests in student training include
+            computational methods, reproducible scientific
+            workflows, research communication, and
+            interdisciplinary applications of AI.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact & Academic Profiles</h2>
+          <p>
+            Research collaborations, academic inquiries,
+            and student research opportunities.
+          </p>
+        </div>
+
+        <div class="prose">
+          <p>
+            <strong>Abdoljalil Addeh, PhD</strong><br>
+            Assistant Professor of Data Science<br>
+            Mount Royal University<br>
+            Calgary, Alberta, Canada
+          </p>
+
+          <div class="profile-links">
+            <a href="https://github.com/JalilAddeh"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+
+            <!-- Add verified links here:
+              Google Scholar
+              ORCID
+              Mount Royal University profile
+              LinkedIn
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Abdoljalil Addeh.
+      Academic website hosted on GitHub Pages.
     </div>
-  </section>
-
-  <section id="publications">
-    <h2>Selected Publications</h2>
-    <p>
-      My research publications focus on machine learning,
-      functional MRI, and physiological signal analysis.
-    </p>
-    <p>
-      A selected list of publications will be added here.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Research Projects and Software</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>fMRI Physiological Reconstruction</h3>
-        <p>
-          Machine learning approaches for reconstructing
-          respiratory and cardiac physiological signals
-          from resting-state fMRI.
-        </p>
-        <a href="https://github.com/JalilAddeh/fMRI-Physio-Reconstruction">
-          View GitHub Repository
-        </a>
-      </div>
-      <div class="card">
-        <h3>CNN-based RV Reconstruction</h3>
-        <p>
-          Deep learning methods for respiratory variation
-          reconstruction from functional MRI.
-        </p>
-        <a href="https://github.com/JalilAddeh/CNN_fMRI_RV_Reconstruction">
-          View GitHub Repository
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="training">
-    <h2>Student Research and Training</h2>
-    <p>
-      I am interested in mentoring students in
-      machine learning, data science, and neuroimaging,
-      with an emphasis on research methodology,
-      reproducible analysis, and scientific communication.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact and Academic Profiles</h2>
-    <p>
-      Mount Royal University<br>
-      Calgary, Alberta, Canada
-    </p>
-    <p>
-      <a href="https://github.com/JalilAddeh">
-        GitHub Profile
-      </a>
-    </p>
-  </section>
-</main>
-
-<footer>
-  &copy; 2026 Abdoljalil Addeh | Mount Royal University
-</footer>
+  </footer>
 
 </body>
 </html>
