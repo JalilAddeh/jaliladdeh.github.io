@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic website of Abdoljalil Addeh, Assistant Professor of Data Science at Mount Royal University.">
+  <title>Abdoljalil Addeh | Academic Website</title>
+  <style>
+    :root {
+      --navy: #17304a;
+      --blue: #24628a;
+      --background: #f7f9fc;
+      --text: #243142;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    header strong { font-size: 20px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: linear-gradient(120deg, #17304a, #285b7e);
+      color: white;
+      padding: 85px 8%;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+    .hero p { max-width: 700px; }
+    .subtitle { font-size: 19px; color: #dce8f5; }
+    .button {
+      display: inline-block;
+      padding: 11px 20px;
+      background: white;
+      color: var(--navy);
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 24px 70px;
+    }
+    section {
+      padding: 38px 0;
+      border-bottom: 1px solid #dce3ec;
+    }
+    h2 { color: var(--navy); font-size: 27px; }
+    h3 { color: var(--blue); margin-bottom: 8px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border: 1px solid #e1e7ef;
+      border-radius: 9px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.035);
+    }
+    a { color: var(--blue); }
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+    @media(max-width: 600px) {
+      header { padding: 20px; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>Abdoljalil Addeh</strong>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Abdoljalil Addeh, PhD</h1>
+    <p class="subtitle">
+      Assistant Professor of Data Science<br>
+      Mount Royal University | Calgary, Canada
+    </p>
+    <p>
+      Machine Learning for Neuroimaging,
+      Physiological Modeling, and Brain Health
+    </p>
+    <a class="button" href="#research">Explore My Research</a>
+  </div>
+</div>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Assistant Professor of Data Science at
+      Mount Royal University in Calgary, Canada.
+      My research focuses on developing machine learning
+      and deep learning methods for neuroimaging,
+      physiological signal modeling, and brain health.
+    </p>
+    <p>
+      I am particularly interested in extracting
+      physiologically meaningful information from
+      functional magnetic resonance imaging (fMRI)
+      and developing computational approaches that
+      advance our understanding of brain function.
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research Areas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Machine Learning for fMRI</h3>
+        <p>
+          Developing computational models to analyze
+          neuroimaging data and uncover meaningful
+          patterns in brain activity.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Physiological Signal Modeling</h3>
+        <p>
+          Estimating respiratory and cardiovascular
+          physiological dynamics from fMRI data.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Brain Health and Aging</h3>
+        <p>
+          Investigating applications of machine learning
+          to brain function, aging, and neurological health.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <p>
+      My research publications focus on machine learning,
+      functional MRI, and physiological signal analysis.
+    </p>
+    <p>
+      A selected list of publications will be added here.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Research Projects and Software</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>fMRI Physiological Reconstruction</h3>
+        <p>
+          Machine learning approaches for reconstructing
+          respiratory and cardiac physiological signals
+          from resting-state fMRI.
+        </p>
+        <a href="https://github.com/JalilAddeh/fMRI-Physio-Reconstruction">
+          View GitHub Repository
+        </a>
+      </div>
+      <div class="card">
+        <h3>CNN-based RV Reconstruction</h3>
+        <p>
+          Deep learning methods for respiratory variation
+          reconstruction from functional MRI.
+        </p>
+        <a href="https://github.com/JalilAddeh/CNN_fMRI_RV_Reconstruction">
+          View GitHub Repository
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="training">
+    <h2>Student Research and Training</h2>
+    <p>
+      I am interested in mentoring students in
+      machine learning, data science, and neuroimaging,
+      with an emphasis on research methodology,
+      reproducible analysis, and scientific communication.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact and Academic Profiles</h2>
+    <p>
+      Mount Royal University<br>
+      Calgary, Alberta, Canada
+    </p>
+    <p>
+      <a href="https://github.com/JalilAddeh">
+        GitHub Profile
+      </a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Abdoljalil Addeh | Mount Royal University
+</footer>
+
+</body>
+</html>
