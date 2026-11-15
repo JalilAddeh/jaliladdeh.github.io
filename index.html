@@ -4,8 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Abdoljalil Addeh, PhD — Assistant Professor of Data Science at Mount Royal University. Research in machine learning, neuroimaging, physiological signal modeling, and biomedical imaging.">
+
+<meta name="description"
+content="Abdoljalil Addeh, PhD — Assistant Professor of Data Science at Mount Royal University. Research in machine learning, neuroimaging, physiological signal modeling, and biomedical imaging.">
+
 <meta name="theme-color" content="#ffffff">
+
 <title>Abdoljalil Addeh, PhD | Research & Academic Profile</title>
 
 <style>
@@ -19,8 +23,13 @@
   --white: #ffffff;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -31,8 +40,13 @@ body {
   line-height: 1.7;
 }
 
-a { color: var(--blue); }
-a:hover { color: var(--navy); }
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--navy);
+}
 
 .container {
   width: min(1120px, 90%);
@@ -74,7 +88,9 @@ nav a {
   font-weight: 550;
 }
 
-nav a:hover { color: var(--blue); }
+nav a:hover {
+  color: var(--blue);
+}
 
 /* HERO */
 
@@ -199,9 +215,13 @@ section {
   scroll-margin-top: 30px;
 }
 
-.section-alt { background: var(--soft); }
+.section-alt {
+  background: var(--soft);
+}
 
-.section-heading { margin-bottom: 35px; }
+.section-heading {
+  margin-bottom: 35px;
+}
 
 .section-heading h2 {
   font-size: 32px;
@@ -219,7 +239,9 @@ section {
   font-size: 16px;
 }
 
-.prose p { margin-bottom: 18px; }
+.prose p {
+  margin-bottom: 18px;
+}
 
 /* RESEARCH CARDS */
 
@@ -323,7 +345,61 @@ section {
   flex-shrink: 0;
 }
 
-/* PROJECTS */
+/* FUNDED RESEARCH PROJECTS */
+
+.project-section-title {
+  font-size: 24px;
+  margin: 45px 0 24px;
+  color: var(--navy);
+}
+
+.funded-project {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-bottom: 24px;
+  box-shadow: 0 5px 20px rgba(23,50,79,0.035);
+}
+
+.project-label {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.funded-project h3 {
+  font-size: 23px;
+  margin: 0 0 14px;
+}
+
+.project-description {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.85;
+  max-width: 900px;
+  margin: 0 0 22px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.project-meta strong {
+  color: var(--navy);
+}
+
+/* OPEN SOURCE PROJECTS */
 
 .project-grid {
   display: grid;
@@ -367,7 +443,9 @@ footer {
   font-size: 13px;
 }
 
-footer a { color: white; }
+footer a {
+  color: white;
+}
 
 /* MOBILE */
 
@@ -377,9 +455,12 @@ footer a { color: white; }
     gap: 45px;
   }
 
-  .portrait { max-width: 270px; }
+  .portrait {
+    max-width: 270px;
+  }
 
-  .cards, .project-grid {
+  .cards,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -388,23 +469,44 @@ footer a { color: white; }
     align-items: flex-start;
   }
 
-  nav { gap: 15px; }
+  nav {
+    gap: 15px;
+  }
 
-  .hero { padding: 65px 0; }
+  .hero {
+    padding: 65px 0;
+  }
 
-  section { padding: 55px 0; }
+  section {
+    padding: 55px 0;
+  }
 
   .course {
     flex-direction: column;
     gap: 4px;
   }
 
-  .course-term { text-align: left; }
+  .course-term {
+    text-align: left;
+  }
+
+  .funded-project {
+    padding: 24px;
+  }
+
+  .funded-project h3 {
+    font-size: 20px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .card { transition: none; }
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card {
+    transition: none;
+  }
 }
 </style>
 </head>
@@ -425,7 +527,7 @@ footer a { color: white; }
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#teaching">Teaching</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Research Projects</a>
       <a href="#training">Training</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -627,7 +729,9 @@ footer a { color: white; }
         P. Charatpangoon, E. Church, et al.
       </p>
 
-      <p><em>Imaging Neuroscience</em> (2026).</p>
+      <p>
+        <em>Imaging Neuroscience</em> (2026).
+      </p>
 
       <a href="https://doi.org/10.1162/IMAG.a.1346"
          target="_blank" rel="noopener noreferrer">
@@ -762,7 +866,7 @@ footer a { color: white; }
       </a>
     </div>
 
-    <div style="margin-top: 35px;">
+    <div style="margin-top:35px;">
       <a
         href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
         target="_blank"
@@ -788,8 +892,6 @@ footer a { color: white; }
         and biomedical engineering.
       </p>
     </div>
-
-    <!-- MOUNT ROYAL UNIVERSITY -->
 
     <div class="teaching-group">
 
@@ -824,8 +926,6 @@ footer a { color: white; }
 
     </div>
 
-    <!-- UNIVERSITY OF CALGARY -->
-
     <div class="teaching-group">
 
       <h3>University of Calgary</h3>
@@ -854,24 +954,152 @@ footer a { color: white; }
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- RESEARCH PROJECTS -->
 
 <section id="projects">
   <div class="container">
 
     <div class="section-heading">
-      <h2>Research Projects &amp; Open-Source Software</h2>
+      <h2>Research Projects &amp; Funding</h2>
       <p>
-        Computational research tools and ongoing
-        methodological development.
+        Funded research initiatives advancing
+        artificial intelligence, neuroimaging,
+        and physiological modeling.
       </p>
     </div>
+
+    <h3 class="project-section-title">
+      Funded Research Projects
+    </h3>
+
+    <!-- AGECARE -->
+
+    <article class="funded-project">
+
+      <div class="project-label">
+        AgeCare Innovation Fund · 2026–2028
+      </div>
+
+      <h3>
+        AI-Enabled Cerebrovascular Reactivity
+        Estimation from Resting-State fMRI
+      </h3>
+
+      <p class="project-description">
+        This project investigates artificial intelligence
+        approaches for estimating cerebrovascular
+        reactivity (CVR) directly from resting-state
+        functional MRI data. By reconstructing
+        physiologically relevant information from
+        routinely acquired imaging measurements,
+        the research aims to reduce dependence on
+        specialized respiratory monitoring and
+        conventional vascular challenge protocols.
+        The longer-term goal is to develop accessible
+        and reproducible computational methods
+        for investigating cerebrovascular function.
+      </p>
+
+      <div class="project-meta">
+        <span><strong>Funding:</strong> CAD $10,000</span>
+        <span><strong>Role:</strong> Principal Investigator</span>
+        <span><strong>Institution:</strong> Mount Royal University</span>
+        <span><strong>Period:</strong> 2026–2028</span>
+      </div>
+
+    </article>
+
+    <!-- IRGF -->
+
+    <article class="funded-project">
+
+      <div class="project-label">
+        Internal Research Grant Fund · 2025–2026
+      </div>
+
+      <h3>
+        Sensor-Free Machine Learning for
+        Physiological Correction of fMRI Data
+      </h3>
+
+      <p class="project-description">
+        This project develops machine learning
+        approaches for characterizing physiological
+        fluctuations directly from resting-state
+        BOLD fMRI data. The research focuses on
+        respiratory and cardiovascular variability,
+        with the goal of supporting physiological
+        noise modeling and correction without
+        requiring external monitoring equipment.
+        The project also contributes to the
+        development of reproducible computational
+        workflows for physiological signal estimation
+        and neuroimaging analysis.
+      </p>
+
+      <div class="project-meta">
+        <span><strong>Funding:</strong> CAD $7,000</span>
+        <span><strong>Role:</strong> Principal Investigator</span>
+        <span><strong>Institution:</strong> Mount Royal University</span>
+        <span><strong>Period:</strong> 2025–2026</span>
+      </div>
+
+    </article>
+
+    <!-- ALBERTA INNOVATES -->
+
+    <article class="funded-project">
+
+      <div class="project-label">
+        Alberta Innovates · 2026
+      </div>
+
+      <h3>
+        AI-Driven Estimation of Cardiorespiratory
+        Variability from Brain MRI in Aging
+      </h3>
+
+      <p class="project-description">
+        This research investigates the use of
+        artificial intelligence to estimate
+        respiratory and cardiovascular variability
+        from brain MRI data, with particular
+        emphasis on aging populations.
+        The project explores how physiological
+        information embedded in functional
+        neuroimaging signals can be recovered
+        using data-driven computational methods,
+        supporting the development and evaluation
+        of sensor-free physiological modeling
+        approaches across the adult lifespan.
+      </p>
+
+      <div class="project-meta">
+        <span><strong>Funding:</strong> CAD $7,500</span>
+        <span><strong>Role:</strong> Principal Investigator</span>
+        <span><strong>Program:</strong> Summer Research Studentship</span>
+        <span><strong>Year:</strong> 2026</span>
+      </div>
+
+    </article>
+
+    <!-- RESEARCH SOFTWARE -->
+
+    <h3 class="project-section-title">
+      Research Software &amp; Open Source
+    </h3>
 
     <div class="project-grid">
 
       <article class="card">
-        <div class="card-number">RESEARCH SOFTWARE</div>
-        <h3>fMRI Physiological Reconstruction</h3>
+
+        <div class="card-number">
+          RESEARCH SOFTWARE
+        </div>
+
+        <h3>
+          fMRI Physiological Reconstruction
+        </h3>
 
         <p>
           Machine learning-based reconstruction of
@@ -886,10 +1114,15 @@ footer a { color: white; }
           rel="noopener noreferrer">
           View Repository &rarr;
         </a>
+
       </article>
 
       <article class="card">
-        <div class="card-number">DEEP LEARNING</div>
+
+        <div class="card-number">
+          DEEP LEARNING
+        </div>
+
         <h3>
           CNN-based Respiratory Variation Reconstruction
         </h3>
@@ -907,6 +1140,7 @@ footer a { color: white; }
           rel="noopener noreferrer">
           View Repository &rarr;
         </a>
+
       </article>
 
     </div>
