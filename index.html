@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,15 +9,9 @@
 content="Abdoljalil Addeh, PhD — Assistant Professor of Data Science at Mount Royal University. Research in machine learning, neuroimaging, physiological signal modeling, and biomedical imaging.">
 
 <meta name="theme-color" content="#ffffff">
-
 <title>Abdoljalil Addeh, PhD | Academic Website</title>
 
 <style>
-
-/* ================================
-   GLOBAL STYLES
-================================ */
-
 :root {
   --navy: #17324f;
   --blue: #286c99;
@@ -29,34 +22,21 @@ content="Abdoljalil Addeh, PhD — Assistant Professor of Data Science at Mount 
   --white: #ffffff;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Arial, sans-serif;
   color: var(--ink);
   background: var(--white);
   line-height: 1.7;
 }
 
-a {
-  color: var(--blue);
-}
-
-a:hover {
-  color: var(--navy);
-}
+a { color: var(--blue); }
+a:hover { color: var(--navy); }
 
 .container {
   width: min(1120px, 90%);
@@ -68,9 +48,7 @@ h1, h2, h3 {
   line-height: 1.3;
 }
 
-/* ================================
-   NAVIGATION
-================================ */
+/* NAVIGATION */
 
 .site-header {
   background: white;
@@ -97,7 +75,7 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 22px;
 }
 
 nav a {
@@ -108,21 +86,14 @@ nav a {
   white-space: nowrap;
 }
 
-nav a:hover {
-  color: var(--blue);
-}
+nav a:hover { color: var(--blue); }
 
-/* ================================
-   HERO
-================================ */
+/* HERO */
 
 .hero {
   padding: 95px 0 105px;
   background: linear-gradient(
-    135deg,
-    #ffffff 50%,
-    #f1f6fa 100%
-  );
+    135deg, #ffffff 50%, #f1f6fa 100%);
 }
 
 .hero-grid {
@@ -195,9 +166,7 @@ h1 {
   border-color: var(--navy);
 }
 
-/* ================================
-   PORTRAIT
-================================ */
+/* PORTRAIT */
 
 .portrait {
   width: 100%;
@@ -229,22 +198,16 @@ h1 {
   color: var(--muted);
 }
 
-/* ================================
-   SECTIONS
-================================ */
+/* SECTIONS */
 
 section {
   padding: 78px 0;
   scroll-margin-top: 30px;
 }
 
-.section-alt {
-  background: var(--soft);
-}
+.section-alt { background: var(--soft); }
 
-.section-heading {
-  margin-bottom: 35px;
-}
+.section-heading { margin-bottom: 35px; }
 
 .section-heading h2 {
   font-size: 32px;
@@ -262,17 +225,11 @@ section {
   font-size: 16px;
 }
 
-.prose p {
-  margin-bottom: 18px;
-}
+.prose p { margin-bottom: 18px; }
 
-/* ================================
-   TEACHING
-================================ */
+/* TEACHING */
 
-.teaching-group {
-  margin-bottom: 40px;
-}
+.teaching-group { margin-bottom: 40px; }
 
 .teaching-group h3 {
   font-size: 23px;
@@ -301,9 +258,7 @@ section {
   flex-shrink: 0;
 }
 
-/* ================================
-   RESEARCH PROJECTS
-================================ */
+/* RESEARCH PROJECTS */
 
 .research-project {
   background: white;
@@ -346,9 +301,7 @@ section {
   color: var(--muted);
 }
 
-.project-meta strong {
-  color: var(--navy);
-}
+.project-meta strong { color: var(--navy); }
 
 .project-links {
   display: flex;
@@ -363,13 +316,82 @@ section {
   text-decoration: none;
 }
 
-.project-links a:hover {
-  text-decoration: underline;
+.project-links a:hover { text-decoration: underline; }
+
+/* RESEARCH TEAM */
+
+.team-group { margin-bottom: 46px; }
+
+.team-group h3 {
+  font-size: 23px;
+  margin: 0 0 22px;
 }
 
-/* ================================
-   PUBLICATIONS
-================================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(23,50,79,0.035);
+}
+
+.team-card h4 {
+  font-size: 19px;
+  color: var(--navy);
+  margin: 0 0 5px;
+}
+
+.team-role {
+  font-size: 14px;
+  color: var(--blue);
+  font-weight: 650;
+  margin: 0 0 14px;
+}
+
+.team-description {
+  font-size: 15px;
+  margin: 0 0 15px;
+}
+
+.team-meta {
+  font-size: 13px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.team-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.join-team {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 32px 36px;
+}
+
+.join-team h3 {
+  margin: 0 0 12px;
+  font-size: 23px;
+}
+
+.join-team p {
+  max-width: 850px;
+  margin: 0 0 22px;
+}
+
+/* PUBLICATIONS */
 
 .publication {
   border-bottom: 1px solid var(--line);
@@ -395,13 +417,9 @@ section {
   text-decoration: none;
 }
 
-.publication a:hover {
-  text-decoration: underline;
-}
+.publication a:hover { text-decoration: underline; }
 
-/* ================================
-   CONTACT
-================================ */
+/* CONTACT */
 
 .profile-links {
   display: flex;
@@ -420,9 +438,7 @@ section {
   font-weight: 600;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
   background: var(--navy);
@@ -431,106 +447,75 @@ footer {
   font-size: 13px;
 }
 
-footer a {
-  color: white;
-}
+footer a { color: white; }
 
-/* ================================
-   RESPONSIVE DESIGN
-================================ */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 800px) {
-
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 45px;
   }
 
-  .portrait {
-    max-width: 270px;
-  }
+  .portrait { max-width: 270px; }
 
   .nav-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  nav {
-    gap: 15px;
-  }
+  nav { gap: 15px; }
 
-  .hero {
-    padding: 65px 0;
-  }
+  .hero { padding: 65px 0; }
 
-  section {
-    padding: 55px 0;
-  }
+  section { padding: 55px 0; }
 
   .course {
     flex-direction: column;
     gap: 4px;
   }
 
-  .course-term {
-    text-align: left;
-  }
+  .course-term { text-align: left; }
 
-  .research-project {
-    padding: 25px;
-  }
+  .research-project { padding: 25px; }
 
-  .research-project h3 {
-    font-size: 20px;
-  }
+  .research-project h3 { font-size: 20px; }
 
+  .team-grid { grid-template-columns: 1fr; }
+
+  .join-team { padding: 25px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+  html { scroll-behavior: auto; }
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- ================================
-     NAVIGATION
-================================ -->
+<!-- NAVIGATION -->
 
 <header class="site-header">
-
   <div class="container nav-inner">
-
-    <a class="brand" href="#">
-      Abdoljalil Addeh
-    </a>
+    <a class="brand" href="#">Abdoljalil Addeh</a>
 
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#teaching">Teaching</a>
       <a href="#projects">Research Projects</a>
+      <a href="#team">Research Team</a>
       <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </nav>
-
   </div>
-
 </header>
 
-<!-- ================================
-     HERO
-================================ -->
+<!-- HERO -->
 
 <div class="hero">
-
   <div class="container hero-grid">
-
     <div>
-
       <div class="eyebrow">
         Assistant Professor of Data Science
       </div>
@@ -548,54 +533,40 @@ footer a {
       </p>
 
       <div class="hero-buttons">
-
         <a href="#projects" class="btn btn-primary">
           Explore My Research
         </a>
-
         <a href="#publications" class="btn btn-outline">
           Publications
         </a>
-
       </div>
-
     </div>
 
     <div class="portrait">
-
       <img
         src="profile.jpg"
         alt="Portrait of Abdoljalil Addeh"
         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
       >
-
       <div class="portrait-placeholder" style="display:none;">
         Professional portrait<br>
         Upload profile.jpg to GitHub
       </div>
-
     </div>
-
   </div>
-
 </div>
 
 <main>
 
-<!-- ================================
-     ABOUT
-================================ -->
+<!-- ABOUT -->
 
 <section id="about">
-
   <div class="container">
-
     <div class="section-heading">
       <h2>About Me</h2>
     </div>
 
     <div class="prose">
-
       <p>
         I am an Assistant Professor of Data Science at
         Mount Royal University in Calgary, Canada.
@@ -626,37 +597,24 @@ footer a {
         scientific programming, biomedical data analysis,
         and interdisciplinary research.
       </p>
-
     </div>
-
   </div>
-
 </section>
 
-<!-- ================================
-     TEACHING
-================================ -->
+<!-- TEACHING -->
 
 <section id="teaching" class="section-alt">
-
   <div class="container">
-
     <div class="section-heading">
-
       <h2>Teaching</h2>
-
       <p>
         Undergraduate teaching in data science,
         machine learning, programming,
         and biomedical engineering.
       </p>
-
     </div>
 
-    <!-- MOUNT ROYAL UNIVERSITY -->
-
     <div class="teaching-group">
-
       <h3>Mount Royal University</h3>
 
       <div class="course">
@@ -685,13 +643,9 @@ footer a {
           Fall 2025 · Winter 2026 · Fall 2026
         </div>
       </div>
-
     </div>
 
-    <!-- UNIVERSITY OF CALGARY -->
-
     <div class="teaching-group">
-
       <h3>University of Calgary</h3>
 
       <div class="course">
@@ -712,25 +666,16 @@ footer a {
           Winter 2024 · Instructor
         </div>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-<!-- ================================
-     RESEARCH PROJECTS
-================================ -->
+<!-- RESEARCH PROJECTS -->
 
 <section id="projects">
-
   <div class="container">
-
     <div class="section-heading">
-
       <h2>Research Projects</h2>
-
       <p>
         My research projects span artificial intelligence,
         functional neuroimaging, physiological signal
@@ -739,13 +684,11 @@ footer a {
         They include funded initiatives, independent
         methodological research, and collaborative studies.
       </p>
-
     </div>
 
-    <!-- PROJECT 1: AGECARE -->
+    <!-- PROJECT 1 -->
 
     <article class="research-project">
-
       <div class="project-label">
         01 / CEREBROVASCULAR REACTIVITY
       </div>
@@ -775,20 +718,14 @@ footer a {
           <strong>Funding:</strong>
           AgeCare Innovation Fund, CAD $10,000
         </span>
-
         <span>
-          <strong>Role:</strong>
-          Principal Investigator
+          <strong>Role:</strong> Principal Investigator
         </span>
-
         <span>
-          <strong>Period:</strong>
-          2026–2028
+          <strong>Period:</strong> 2026–2028
         </span>
-
         <span>
-          <strong>Institution:</strong>
-          Mount Royal University
+          <strong>Institution:</strong> Mount Royal University
         </span>
       </div>
 
@@ -798,13 +735,11 @@ footer a {
           Related Publication &rarr;
         </a>
       </div>
-
     </article>
 
-    <!-- PROJECT 2: IRGF -->
+    <!-- PROJECT 2 -->
 
     <article class="research-project">
-
       <div class="project-label">
         02 / PHYSIOLOGICAL SIGNAL MODELING
       </div>
@@ -834,20 +769,14 @@ footer a {
           <strong>Funding:</strong>
           MRU Internal Research Grant Fund, CAD $7,000
         </span>
-
         <span>
-          <strong>Role:</strong>
-          Principal Investigator
+          <strong>Role:</strong> Principal Investigator
         </span>
-
         <span>
-          <strong>Period:</strong>
-          2025–2026
+          <strong>Period:</strong> 2025–2026
         </span>
-
         <span>
-          <strong>Institution:</strong>
-          Mount Royal University
+          <strong>Institution:</strong> Mount Royal University
         </span>
       </div>
 
@@ -857,13 +786,11 @@ footer a {
           Research Software &rarr;
         </a>
       </div>
-
     </article>
 
-    <!-- PROJECT 3: ALBERTA INNOVATES -->
+    <!-- PROJECT 3 -->
 
     <article class="research-project">
-
       <div class="project-label">
         03 / AI AND BRAIN AGING
       </div>
@@ -894,15 +821,11 @@ footer a {
           Alberta Innovates Summer Research Studentship,
           CAD $7,500
         </span>
-
         <span>
-          <strong>Role:</strong>
-          Principal Investigator
+          <strong>Role:</strong> Principal Investigator
         </span>
-
         <span>
-          <strong>Year:</strong>
-          2026
+          <strong>Year:</strong> 2026
         </span>
       </div>
 
@@ -912,13 +835,11 @@ footer a {
           Related Publication &rarr;
         </a>
       </div>
-
     </article>
 
-    <!-- PROJECT 4: LIFESPAN RESEARCH -->
+    <!-- PROJECT 4 -->
 
     <article class="research-project">
-
       <div class="project-label">
         04 / DEEP LEARNING FOR NEUROIMAGING
       </div>
@@ -948,12 +869,10 @@ footer a {
           <strong>Research Area:</strong>
           Physiological Signal Reconstruction
         </span>
-
         <span>
           <strong>Methods:</strong>
           Machine Learning and Deep Learning
         </span>
-
         <span>
           <strong>Populations:</strong>
           Children, Adults, and Aging Cohorts
@@ -961,7 +880,6 @@ footer a {
       </div>
 
       <div class="project-links">
-
         <a href="https://doi.org/10.1162/IMAG.a.1346"
            target="_blank" rel="noopener noreferrer">
           Related Publication &rarr;
@@ -971,15 +889,12 @@ footer a {
            target="_blank" rel="noopener noreferrer">
           Research Software &rarr;
         </a>
-
       </div>
-
     </article>
 
-    <!-- PROJECT 5: COLLABORATIVE RESEARCH -->
+    <!-- PROJECT 5 -->
 
     <article class="research-project">
-
       <div class="project-label">
         05 / COLLABORATIVE BIOMEDICAL AI
       </div>
@@ -1009,20 +924,16 @@ footer a {
           <strong>Research Area:</strong>
           Biomedical Image Analysis
         </span>
-
         <span>
           <strong>Methods:</strong>
           Image Translation and Deep Learning
         </span>
-
         <span>
-          <strong>Role:</strong>
-          Research Collaborator
+          <strong>Role:</strong> Research Collaborator
         </span>
       </div>
 
       <div class="project-links">
-
         <a href="https://doi.org/10.1002/jmri.29070"
            target="_blank" rel="noopener noreferrer">
           MRI-to-PET Publication &rarr;
@@ -1032,67 +943,166 @@ footer a {
            target="_blank" rel="noopener noreferrer">
           CT Perfusion Publication &rarr;
         </a>
-
       </div>
-
     </article>
-
   </div>
-
 </section>
 
-<!-- ================================
-     PUBLICATIONS
-================================ -->
+<!-- RESEARCH TEAM -->
 
-<section id="publications" class="section-alt">
-
+<section id="team" class="section-alt">
   <div class="container">
 
     <div class="section-heading">
+      <h2>Research Team</h2>
+      <p>
+        I mentor and collaborate with students and research
+        trainees working at the intersection of artificial
+        intelligence, neuroimaging, biomedical data science,
+        and physiological signal modeling.
+      </p>
+    </div>
 
+    <!-- CURRENT TRAINEES -->
+
+    <div class="team-group">
+      <h3>Current Research Trainees</h3>
+
+      <div class="team-grid">
+
+        <!-- Replace this card with trainee information -->
+
+        <article class="team-card">
+          <h4>Trainee Name</h4>
+          <p class="team-role">
+            Undergraduate Research Assistant
+          </p>
+
+          <p class="team-description">
+            Research on machine learning and deep learning
+            for physiological signal estimation from
+            functional MRI.
+          </p>
+
+          <div class="team-meta">
+            <strong>Institution:</strong>
+            Mount Royal University<br>
+            <strong>Period:</strong> 2026–Present
+          </div>
+        </article>
+
+        <!-- Additional trainee card -->
+
+        <article class="team-card">
+          <h4>Trainee Name</h4>
+          <p class="team-role">
+            Research Trainee
+          </p>
+
+          <p class="team-description">
+            Research on artificial intelligence for
+            brain health, neuroimaging, and
+            computational biomedical analysis.
+          </p>
+
+          <div class="team-meta">
+            <strong>Institution:</strong>
+            Mount Royal University<br>
+            <strong>Period:</strong> 2026–Present
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- FORMER TRAINEES -->
+
+    <div class="team-group">
+      <h3>Former Research Trainees</h3>
+
+      <div class="team-grid">
+
+        <article class="team-card">
+          <h4>Former Trainee Name</h4>
+          <p class="team-role">
+            Former Research Student
+          </p>
+
+          <p class="team-description">
+            Research in machine learning,
+            biomedical imaging, and neuroimaging analysis.
+          </p>
+
+          <div class="team-meta">
+            <strong>Research Period:</strong>
+            Add year<br>
+            <strong>Institution:</strong>
+            Add institution
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- JOIN THE TEAM -->
+
+    <div class="join-team">
+      <h3>Interested in Joining?</h3>
+
+      <p>
+        I welcome inquiries from motivated students
+        interested in machine learning, deep learning,
+        neuroimaging, biomedical data analysis, and
+        interdisciplinary research. Research opportunities
+        may involve scientific programming, computational
+        modeling, data analysis, and contributing to
+        conference presentations and publications.
+      </p>
+
+      <a href="mailto:jaddeh@mtroyal.ca"
+         class="btn btn-primary">
+        Contact Me About Research Opportunities
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+
+<section id="publications">
+  <div class="container">
+
+    <div class="section-heading">
       <h2>Selected Publications</h2>
-
       <p>
         Peer-reviewed research in machine learning,
         neuroimaging, physiological signal modeling,
         and biomedical imaging.
       </p>
-
     </div>
 
-    <!-- PUBLICATION 1 -->
-
     <div class="publication">
-
       <h3>
         Calibration-Free Estimation of Cerebrovascular
         Reactivity from Resting-State BOLD fMRI
         Using Reconstructed Respiratory Fluctuations
       </h3>
-
       <p>
         <strong>A. Addeh</strong>, E. Church,
-        M. Mahajna, K. Ardila, P. Charatpangoon,
-        et al.
+        M. Mahajna, K. Ardila, P. Charatpangoon, et al.
       </p>
-
       <p>
         <em>Magnetic Resonance in Medicine</em>,
         96(6), 2755–2766 (2026).
       </p>
-
       <a href="https://doi.org/10.1002/mrm.70553"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
-    <!-- PUBLICATION 2 -->
-
     <div class="publication">
-
       <h3>
         Improving Respiratory and Heart Rate Variation
         Estimation from Resting-State BOLD fMRI
@@ -1100,199 +1110,144 @@ footer a {
         Populations Using a Deep Learning Architecture
         Informed by Functional and Structural Atlases
       </h3>
-
       <p>
         <strong>A. Addeh</strong>, K. Ardila,
         P. Charatpangoon, E. Church, et al.
       </p>
-
-      <p>
-        <em>Imaging Neuroscience</em> (2026).
-      </p>
-
+      <p><em>Imaging Neuroscience</em> (2026).</p>
       <a href="https://doi.org/10.1162/IMAG.a.1346"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
-    <!-- PUBLICATION 3 -->
-
     <div class="publication">
-
       <h3>
         Physiological Confounds in BOLD-fMRI
         and Their Correction
       </h3>
-
       <p>
         <strong>A. Addeh</strong>, R. J. Williams,
         A. Golestani, G. B. Pike, M. E. MacDonald.
       </p>
-
       <p>
         <em>NMR in Biomedicine</em>,
         38, e70076 (2025).
       </p>
-
       <a href="https://doi.org/10.1002/nbm.70076"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
-    <!-- PUBLICATION 4 -->
-
     <div class="publication">
-
       <h3>
         Machine Learning-based Estimation of
         Respiratory Fluctuations in a Healthy Adult
         Population Using Resting State BOLD fMRI
         and Head Motion Parameters
       </h3>
-
       <p>
         <strong>A. Addeh</strong>, F. Vega,
         A. Morshedi, R. J. Williams,
         G. B. Pike, M. E. MacDonald.
       </p>
-
       <p>
         <em>Magnetic Resonance in Medicine</em>,
         93(3), 1365–1379 (2025).
       </p>
-
       <a href="https://doi.org/10.1002/mrm.30330"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
-    <!-- PUBLICATION 5 -->
-
     <div class="publication">
-
       <h3>
         Direct Machine Learning Reconstruction of
         Respiratory Variation Waveforms from
         Resting State fMRI Data in a Pediatric Population
       </h3>
-
       <p>
         <strong>A. Addeh</strong>, F. Vega,
         P. R. Medi, R. J. Williams,
         G. B. Pike, M. E. MacDonald.
       </p>
-
       <p>
         <em>NeuroImage</em>,
         269, 119904 (2023).
       </p>
-
       <a href="https://doi.org/10.1016/j.neuroimage.2023.119904"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
-    <!-- PUBLICATION 6 -->
-
     <div class="publication">
-
       <h3>
         Radiation Dose Reduction in Computed Tomography
         Perfusion of Acute Ischemic Stroke Patients
         Using a Denoising Autoencoder
       </h3>
-
       <p>
         P. Charatpangoon, P. Delannoy, F. Vega,
         R. Gilliland, <strong>A. Addeh</strong>, et al.
       </p>
-
       <p>
         <em>Physica Medica</em>,
         148, 105902 (2026).
       </p>
-
       <a href="https://doi.org/10.1016/j.ejmp.2026.105902"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
-    <!-- PUBLICATION 7 -->
-
     <div class="publication">
-
       <h3>
         Image Translation for Estimating
         Two-Dimensional Axial Amyloid-Beta PET
         from Structural MRI
       </h3>
-
       <p>
         F. Vega, <strong>A. Addeh</strong>,
         A. Ganesh, E. E. Smith, M. E. MacDonald.
       </p>
-
       <p>
         <em>Journal of Magnetic Resonance Imaging</em>,
         59(3), 1021–1031 (2024).
       </p>
-
       <a href="https://doi.org/10.1002/jmri.29070"
          target="_blank" rel="noopener noreferrer">
         View Journal Article &rarr;
       </a>
-
     </div>
 
     <div style="margin-top:35px;">
-
-      <a
-        href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-primary">
-
+      <a href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-primary">
         View All Publications on Google Scholar &rarr;
-
       </a>
-
     </div>
 
   </div>
-
 </section>
 
-<!-- ================================
-     CONTACT
-================================ -->
+<!-- CONTACT -->
 
 <section id="contact">
-
   <div class="container">
 
     <div class="section-heading">
-
       <h2>Contact &amp; Academic Profiles</h2>
-
       <p>
         Research collaborations, academic inquiries,
         and student research opportunities.
       </p>
-
     </div>
 
     <div class="prose">
-
       <p>
         <strong>Abdoljalil Addeh, PhD</strong><br>
         Assistant Professor of Data Science<br>
@@ -1308,34 +1263,24 @@ footer a {
       </p>
 
       <div class="profile-links">
-
-        <a
-          href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://scholar.google.ca/citations?user=VQZ39nkAAAAJ&amp;hl=en"
+           target="_blank" rel="noopener noreferrer">
           Google Scholar
         </a>
 
-        <a
-          href="https://github.com/JalilAddeh"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://github.com/JalilAddeh"
+           target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-
       </div>
-
     </div>
 
   </div>
-
 </section>
 
 </main>
 
-<!-- ================================
-     FOOTER
-================================ -->
+<!-- FOOTER -->
 
 <footer>
   <div class="container">
