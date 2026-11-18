@@ -9,8 +9,13 @@
   --white: #ffffff;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -21,8 +26,13 @@ body {
   line-height: 1.7;
 }
 
-a { color: var(--blue); }
-a:hover { color: var(--navy); }
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--navy);
+}
 
 .container {
   width: min(1120px, 90%);
@@ -61,25 +71,34 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 28px;
 }
 
 nav a {
   color: var(--ink);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
 }
 
-nav a:hover { color: var(--blue); }
+nav a:hover {
+  color: var(--blue);
+}
+
+nav a[aria-current="page"] {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 4px;
+}
 
 /* HERO */
 
 .hero {
   padding: 95px 0 105px;
   background: linear-gradient(
-    135deg, #ffffff 50%, #f1f6fa 100%);
+    135deg, #ffffff 50%, #f1f6fa 100%
+  );
 }
 
 .hero-grid {
@@ -191,9 +210,13 @@ section {
   scroll-margin-top: 30px;
 }
 
-.section-alt { background: var(--soft); }
+.section-alt {
+  background: var(--soft);
+}
 
-.section-heading { margin-bottom: 35px; }
+.section-heading {
+  margin-bottom: 35px;
+}
 
 .section-heading h2 {
   font-size: 32px;
@@ -211,11 +234,15 @@ section {
   font-size: 16px;
 }
 
-.prose p { margin-bottom: 18px; }
+.prose p {
+  margin-bottom: 18px;
+}
 
 /* TEACHING */
 
-.teaching-group { margin-bottom: 40px; }
+.teaching-group {
+  margin-bottom: 40px;
+}
 
 .teaching-group h3 {
   font-size: 23px;
@@ -287,7 +314,9 @@ section {
   color: var(--muted);
 }
 
-.project-meta strong { color: var(--navy); }
+.project-meta strong {
+  color: var(--navy);
+}
 
 .project-links {
   display: flex;
@@ -302,11 +331,15 @@ section {
   text-decoration: none;
 }
 
-.project-links a:hover { text-decoration: underline; }
+.project-links a:hover {
+  text-decoration: underline;
+}
 
 /* RESEARCH TEAM */
 
-.team-group { margin-bottom: 46px; }
+.team-group {
+  margin-bottom: 46px;
+}
 
 .team-group h3 {
   font-size: 23px;
@@ -403,7 +436,9 @@ section {
   text-decoration: none;
 }
 
-.publication a:hover { text-decoration: underline; }
+.publication a:hover {
+  text-decoration: underline;
+}
 
 /* CONTACT */
 
@@ -433,57 +468,123 @@ footer {
   font-size: 13px;
 }
 
-footer a { color: white; }
+footer a {
+  color: white;
+}
+
+/* MULTI-PAGE ENHANCEMENTS */
+
+.page-intro {
+  padding: 65px 0 30px;
+  background: linear-gradient(
+    135deg, #ffffff 50%, #f1f6fa 100%
+  );
+}
+
+.page-intro h1 {
+  font-size: clamp(32px, 4vw, 45px);
+  margin: 0 0 12px;
+}
+
+.page-intro p {
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.highlight-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.highlight-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.highlight-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.highlight-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 5px 20px rgba(23,50,79,0.07);
+}
 
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 800px) {
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 45px;
   }
 
-  .portrait { max-width: 270px; }
+  .portrait {
+    max-width: 270px;
+  }
 
   .nav-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  nav { gap: 15px; }
+  nav {
+    gap: 15px;
+  }
 
-  .hero { padding: 65px 0; }
+  .hero {
+    padding: 65px 0;
+  }
 
-  section { padding: 55px 0; }
+  section {
+    padding: 55px 0;
+  }
 
   .course {
     flex-direction: column;
     gap: 4px;
   }
 
-  .course-term { text-align: left; }
+  .course-term {
+    text-align: left;
+  }
 
-  .research-project { padding: 25px; }
+  .research-project {
+    padding: 25px;
+  }
 
-  .research-project h3 { font-size: 20px; }
+  .research-project h3 {
+    font-size: 20px;
+  }
 
-  .team-grid { grid-template-columns: 1fr; }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .join-team { padding: 25px; }
+  .join-team {
+    padding: 25px;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+  }
 }
-
-/* Multi-page enhancements */
-nav a[aria-current="page"]{color:var(--blue);border-bottom:2px solid var(--blue);padding-bottom:4px}
-.page-intro{padding:65px 0 30px;background:linear-gradient(135deg,#fff 50%,#f1f6fa 100%)}
-.page-intro h1{font-size:clamp(32px,4vw,45px);margin:0 0 12px}
-.page-intro p{color:var(--muted);max-width:800px;margin:0}
-.highlight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.highlight-card{padding:28px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;color:var(--ink)}
-.highlight-card h3{margin:0 0 10px;font-size:20px}
-.highlight-card p{margin:0;color:var(--muted);font-size:14px}
-.highlight-card:hover{border-color:var(--blue);box-shadow:0 5px 20px rgba(23,50,79,.07)}
-@media(max-width:800px){.highlight-grid{grid-template-columns:1fr}}
